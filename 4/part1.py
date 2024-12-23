@@ -1,5 +1,3 @@
-import re
-
 data = open('4/input.txt','r')
 grid = data.read().split()
 directions = [(-1,-1),(0,-1),(1,-1),(-1,0),(1,0),(-1,1),(0,1),(1,1)]

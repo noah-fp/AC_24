@@ -1,6 +1,4 @@
-import re
-
-data = open('4/ex input.txt','r')
+data = open('4/input.txt','r')
 grid = data.read().split()
 directions = [(-1,-1),(1,-1)]
 count = 0
@@ -19,5 +17,6 @@ for y_index,row in enumerate(grid):
                     break
                 if not set((grid[letter1[0]][letter1[1]],grid[letter2[0]][letter2[1]])) == {"M","S"}:
                     break
-            count += 1
+            else:
+                count += 1
 print(count)
